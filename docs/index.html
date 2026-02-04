@@ -1,0 +1,411 @@
+/** Copyright (C) 2026 Der Akademiker und der Hauptschüler
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*
+* Author: Der Akademiker und der Hauptschüler
+*/
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Akademiker und der Hauptschüler - Der Podcast</title>
+    <meta name="description" content="Ein Podcast rund um Persönlichkeitsentwicklung, Beruf, Karriere, KI und alles was das Leben als junger Erwachsener mit sich bringt.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Der Akademiker und der Hauptschüler Podcast Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1>🎙️ Der Akademiker und der Hauptschüler</h1>
+                        <p>Der Podcast</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#about">Über uns</a>
+                    <a href="#episodes">Episoden</a>
+                    <a href="#hosts">Hosts</a>
+                    <a href="#listen">Anhören</a>
+                    <a href="#impressum">Impressum</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="images/banner.png" alt="Der Akademiker und der Hauptschüler Podcast Banner" class="hero-banner-image">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>🎧 Bleib neugierig, bleib am Ball!</h2>
+                <p class="hero-subtitle">Ein Podcast rund um Persönlichkeitsentwicklung, Beruf, Karriere, KI und alles was das Leben als junger Erwachsener mit sich bringt.</p>
+                <div class="hero-badges">
+                    <span class="badge badge-active">Aktiv</span>
+                    <span class="badge badge-language">Deutsch</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="https://www.youtube.com/watch?v=_md2SMNgD4I&list=PL50rwINinr1GyHPhYeY1hh0lRMS4GNEfE" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-youtube"></i> Aktuelle Episode ansehen
+                    </a>
+                    <a href="#listen" class="btn btn-secondary">Alle Plattformen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>📋 Über den Podcast</h2>
+            <p>Unser Podcast behandelt relevante Themen für junge Erwachsene und Berufserfahrene. Eine Liste der aktuell geplanten Episodeninhalte lautet:</p>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Berufseinstieg & Karriere</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Studium & Ausbildung</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Künstliche Intelligenz</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Gehaltsverhandlung</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Persönlichkeitsentwicklung</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Work-Life-Balance</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Leadership</h3>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Entrepreneurship</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosts Section -->
+    <section id="hosts" class="section section-dark">
+        <div class="container">
+            <h2>👥 Die Hosts</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3><a href="https://www.linkedin.com/in/ki-und-automatisierung/" target="_blank">Martin Jäger</a></h3>
+                        <p class="host-website"><a href="https://huntercoach.de" target="_blank">huntercoach.de</a></p>
+                        <p><strong>Expertise:</strong> Karrierecoaching, Personalentwicklung, KI, Unternehmer</p>
+                        <p><strong>Fokus:</strong> KI, Unternehmer/Gründer, Karriereplanung</p>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <div class="host-info">
+                        <h3><a href="https://www.linkedin.com/in/dennis-grewe-168977137/" target="_blank">Dennis Grewe</a></h3>
+                        <p class="host-institution">Hochschule Esslingen</p>
+                        <p><strong>Expertise:</strong> Hochschullehre, Technologie, KI</p>
+                        <p><strong>Fokus:</strong> Studium, Digitalisierung, Zukunftstechnologien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section id="episodes" class="section">
+        <div class="container">
+            <h2>📚 Episoden</h2>
+            <div class="episodes-grid">
+                <div class="episode-card">
+                    <div class="episode-number">11</div>
+                    <div class="episode-content">
+                        <h3>KI und Hybrid Selling im B2B-Vertrieb</h3>
+                        <p>KI im Vertrieb, Hybrid Selling, Digitale Transformation</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-planning">🔄 In Planung</span>
+                            <a href="../episodes/episode11_ki-b2b.md" class="episode-link" target="_blank">
+                                <i class="fas fa-file-text"></i> Dokumentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">10</div>
+                    <div class="episode-content">
+                        <h3>Social Media und mentale Gesundheit</h3>
+                        <p>Social Media, Jugend, Psychische Gesundheit, Regulierung</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">🎤 Aufgenommen</span>
+                            <a href="https://github.com/Anntex/akademiker-und-hauptschueler-podcast/blob/main/episodes/episode10-social_media.md" class="episode-link" target="_blank">
+                                <i class="fas fa-file-text"></i> Dokumentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">09</div>
+                    <div class="episode-content">
+                        <h3>Gen Z und die Zukunft der Arbeitswelt</h3>
+                        <p>Generation Z, Arbeitsmarkt, Work-Life-Balance, Purpose</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">🎤 Aufgenommen</span>
+                            <a href="https://github.com/Anntex/akademiker-und-hauptschueler-podcast/blob/main/episodes/episode09_genz.md" class="episode-link" target="_blank">
+                                <i class="fas fa-file-text"></i> Dokumentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">08</div>
+                    <div class="episode-content">
+                        <h3>Deutsche Automobilindustrie Q4 2025</h3>
+                        <p>Mercedes, Porsche, VW, Elektromobilität, Transformation</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">🎤 Aufgenommen</span>
+                            <a href="https://github.com/Anntex/akademiker-und-hauptschueler-podcast/blob/main/episodes/episode08-autoindustrie-q425.md" class="episode-link" target="_blank">
+                                <i class="fas fa-file-text"></i> Dokumentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">07</div>
+                    <div class="episode-content">
+                        <h3>KI-Startups in Deutschland – Boom oder zu spät?</h3>
+                        <p>KI-Startups, Gründung, Innovation, DACH-Markt</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=t4Cc5r9HZzM&t=110s" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">06</div>
+                    <div class="episode-content">
+                        <h3>Macht uns KI dümmer?</h3>
+                        <p>KI-Nutzung, Cognitive Offloading, Bildung</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=_md2SMNgD4I&t=8s" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">05</div>
+                    <div class="episode-content">
+                        <h3>Low Performer im Unternehmen</h3>
+                        <p>Mitarbeiterführung, Leistung, Verantwortung</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=O7xweY1QNV4&t=3s" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">04</div>
+                    <div class="episode-content">
+                        <h3>Krise der deutschen Automobilindustrie</h3>
+                        <p>VW, Porsche, Mercedes, Elektromobilität</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=nvI3Ki_6xQI" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">03</div>
+                    <div class="episode-content">
+                        <h3>Leadership im Unternehmen</h3>
+                        <p>Leadership, Moderne vs. klassische Mitarbeiterführung</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=EUpEDw248M4" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">02</div>
+                    <div class="episode-content">
+                        <h3>Rund um den Berufsstart</h3>
+                        <p>Berufseinstieg, Studium vs. Ausbildung</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=yUzoQfdNvKQ" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">01</div>
+                    <div class="episode-content">
+                        <h3>Intro - Über das Leben und dessen Sinn</h3>
+                        <p>Einführung, Lebensentscheidungen</p>
+                        <div class="episode-status">
+                            <span class="status-badge status-recorded">✅ Veröffentlicht</span>
+                            <a href="https://www.youtube.com/watch?v=2dzjaFj-JW4" class="episode-link" target="_blank">
+                                <i class="fab fa-youtube"></i> Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listen Section -->
+    <section id="listen" class="section section-dark">
+        <div class="container">
+            <h2>📺 Podcast anhören</h2>
+            <div class="platforms-grid">
+                <a href="https://www.youtube.com/@GreweJ%C3%A4ger" class="platform-card" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                    <span class="available">✅ Verfügbar</span>
+                </a>
+                <a href="#" class="platform-card">
+                    <i class="fab fa-spotify"></i>
+                    <span>Spotify</span>
+                    <span class="coming-soon">Coming Soon</span>
+                </a>
+                <a href="#" class="platform-card">
+                    <i class="fab fa-apple"></i>
+                    <span>Apple Podcasts</span>
+                    <span class="coming-soon">Coming Soon</span>
+                </a>
+                <a href="#" class="platform-card">
+                    <i class="fab fa-google"></i>
+                    <span>Google Podcasts</span>
+                    <span class="coming-soon">Coming Soon</span>
+                </a>
+                <a href="#" class="platform-card">
+                    <i class="fas fa-anchor"></i>
+                    <span>Anchor</span>
+                    <span class="coming-soon">Coming Soon</span>
+                </a>
+                <a href="#" class="platform-card">
+                    <i class="fas fa-podcast"></i>
+                    <span>Pocket Casts</span>
+                    <span class="coming-soon">Coming Soon</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impressum -->
+    <section id="impressum" class="section">
+        <div class="container">
+            <div class="impressum-toggle">
+                <button class="impressum-button" onclick="toggleImpressum()">
+                    📄 Impressum & Rechtliches <span class="toggle-icon">▼</span>
+                </button>
+            </div>
+            <div class="impressum-content" id="impressum-content">
+                <div class="impressum-section">
+                    <h3>Angaben gemäß § 5 TMG:</h3>
+                    <p><strong>Verantwortlich für den Inhalt:</strong></p>
+                    <p>
+                        Martin Jäger<br>
+                        Otto-Lilienthal-Straße 36<br>
+                        71034 Böblingen<br>
+                        Deutschland
+                    </p>
+                    <p>
+                        <strong>Kontakt:</strong><br>
+                        E-Mail: kontakt@huntercoach.de<br>
+                        Website: <a href="https://huntercoach.de" target="_blank">huntercoach.de</a>
+                    </p>
+                </div>
+
+                <div class="impressum-section">
+                    <h3>Haftungsausschluss:</h3>
+                    <h4>Inhalt</h4>
+                    <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+
+                    <h4>Links</h4>
+                    <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+
+                    <h4>Urheberrecht</h4>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <div class="container">
+            <h3>⚖️ Disclaimer</h3>
+            <p><strong>Wichtiger Hinweis:</strong> Die in diesem Podcast und Repository geteilten Inhalte, Meinungen und Ratschläge stellen ausschließlich die <strong>persönlichen Ansichten der Hosts</strong> Martin Jäger und Dennis Grewe dar.</p>
+            <p>Diese Inhalte spiegeln <strong>nicht</strong> die offiziellen Positionen, Richtlinien oder Meinungen der Institutionen, Arbeitgeber, oder andere Organisatoren, mit denen die Host verbunden sind, wider.</p>
+            <p>Alle geteilten Informationen dienen der allgemeinen Bildung und Diskussion. Für spezifische berufliche oder persönliche Entscheidungen sollten professionelle Beratung und individuelle Recherche durchgeführt werden.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🎙️ Selbst.Verständlich?!</h4>
+                    <p>Bleib neugierig, bleib am Ball</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Repository</h4>
+                    <a href="https://github.com/Anntexx/selbst.verstaendlich-podcast" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <a href="#impressum">Impressum</a>
+                    <p>GPL v3 Lizenz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Der Akademiker und der Hauptschüler Podcast - Alle Rechte vorbehalten</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
