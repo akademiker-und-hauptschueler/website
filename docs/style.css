@@ -681,7 +681,9 @@ body {
     }
 
     .nav {
-        gap: 1rem;
+        gap: 0.5rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero-content h2 {
