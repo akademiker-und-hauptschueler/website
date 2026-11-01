@@ -18,7 +18,7 @@
     {
       "label": "Mercedes-Benz Cars¹",
       "values": [{ "value": -7.8 }, { "value": -31, "decimals": 0 }],
-      "source": "Mercedes-Benz Group, Q3 2026 (407.232 nach 441.453); China 86.800, −31 % laut Absatzmeldung Oktober 2026"
+      "source": "Mercedes-Benz Group, Q3 2026 (407.232 nach 441.453); China 86.800, −31 % laut Medienberichten (dpa, finanztrends), Oktober 2026"
     },
     {
       "label": "BMW Group",
@@ -27,5 +27,5 @@
     }
   ],
   "footnote": "¹ Mercedes-Benz: nur Pkw.",
-  "sources": "Volkswagen Group, Mercedes-Benz Group, BMW Group (Oktober 2026)."
+  "sources": "Volkswagen Group, Mercedes-Benz Group, BMW Group (Oktober 2026), China-Wert Mercedes laut dpa."
 }
