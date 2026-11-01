@@ -1,13 +1,13 @@
 ---
 title: "Ein Jahr nach dem Porsche-Schock: Hatten wir recht?"
-date: 2026-11-05
-# episode: 45      # Nummer der Episodenkarte auf der Startseite, nach Veröffentlichung eintragen
-# youtube: https://www.youtube.com/watch?v=...   # Pflicht, sobald draft: false
+date: 2026-11-01
+episode: 45
+youtube: https://www.youtube.com/watch?v=JMFM9hvzyZs
 summary: "Zahlen, Faktencheck und Quellen zur Folge: Porsche verdient wieder, VW schreibt trotzdem 6,4 Milliarden Euro auf Porsche ab. Was wir vor einem Jahr gesagt haben, was eingetreten ist und was der VW-Zukunftsplan 2030 für Stuttgart und Heilbronn bedeutet."
-draft: true
+draft: false
 ---
 
-Am **24. Oktober 2025** meldete Porsche fast eine Milliarde Euro operativen Verlust in einem einzigen Quartal. Wir haben damals gesagt: Die Autoindustrie brennt. Ein Jahr später, in der Woche der neuen Quartalszahlen, haben wir uns selbst überprüft. Hier findet ihr die Zahlen, Grafiken und Quellen zur Folge, auch die, für die im Gespräch keine Zeit war.
+Am **24. Oktober 2025** meldete Porsche fast eine Milliarde Euro operativen Verlust in einem einzigen Quartal. Wir haben damals über die Krise der deutschen Automobilindustrie gesprochen. Ein Jahr später, in der Woche der neuen Quartalszahlen, haben wir uns selbst überprüft. Hier findet ihr die Zahlen, Grafiken und Quellen zur Folge, auch die, für die im Gespräch keine Zeit war.
 
 > **Stand: 1. November 2026**, mit den Quartalszahlen von Porsche (27.10.), Mercedes-Benz (28.10.), Volkswagen (29.10.) und Audi (30.10.). BMW legt seine Zahlen laut Terminankündigung am 4. November vor.
 
