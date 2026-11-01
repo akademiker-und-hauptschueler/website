@@ -21,6 +21,9 @@
 // 3. writes the blog overview _site/blog/index.html,
 // 4. adds a "Hintergrund" link to the episode card of every published post.
 //
+// Charts are kept as data (<name>.chart.json next to the post) and rendered to
+// <name>.svg here, see scripts/charts.mjs.
+//
 // Drafts (draft: true) and posts dated in the future are skipped unless the
 // script runs with --drafts (local preview only).
 
@@ -29,6 +32,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { chartLabels, renderChart } from './charts.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE_SRC = path.join(ROOT, 'docs');
@@ -46,6 +50,7 @@ const formatDate = (date) => date.toLocaleDateString('de-DE', {
 });
 
 const skipJunk = (src) => path.basename(src) !== '.DS_Store';
+const CHART_SUFFIX = '.chart.json';
 
 function extract(html, pattern, name) {
     const match = html.match(pattern);
@@ -207,6 +212,23 @@ function linkEpisodeCards(indexHtml, posts) {
     return html;
 }
 
+// Renders every <name>.chart.json of a post to <name>.svg. Each value shown in a
+// chart must also be written in the post, so a typo in one place fails the build.
+async function writeCharts(post, dir) {
+    const files = (await readdir(path.join(POSTS_SRC, post.slug))).filter((f) => f.endsWith(CHART_SUFFIX));
+    for (const file of files) {
+        const name = `${post.slug}/${file}`;
+        const chart = JSON.parse(await readFile(path.join(POSTS_SRC, post.slug, file), 'utf8'));
+        const missing = chartLabels(chart).filter((label) => !post.content.includes(label));
+        if (missing.length > 0) {
+            throw new Error(`${name}: values not found in the post text: ${missing.join(', ')}`);
+        }
+        const svg = file.slice(0, -CHART_SUFFIX.length) + '.svg';
+        if (!post.content.includes(`(${svg})`)) console.warn(`warning: ${name} is not used in the post`);
+        await writeFile(path.join(dir, svg), renderChart(chart, name));
+    }
+}
+
 async function main() {
     const indexHtml = await readFile(path.join(SITE_SRC, 'index.html'), 'utf8');
     const shell = {
@@ -226,8 +248,9 @@ async function main() {
         const dir = path.join(BLOG_OUT, post.slug);
         await cp(path.join(POSTS_SRC, post.slug), dir, {
             recursive: true,
-            filter: (src) => skipJunk(src) && path.basename(src) !== 'index.md',
+            filter: (src) => skipJunk(src) && path.basename(src) !== 'index.md' && !src.endsWith(CHART_SUFFIX),
         });
+        await writeCharts(post, dir);
         await writeFile(path.join(dir, 'index.html'), renderPost(post, shell));
     }
     await writeFile(path.join(BLOG_OUT, 'index.html'), renderIndex(posts, shell));

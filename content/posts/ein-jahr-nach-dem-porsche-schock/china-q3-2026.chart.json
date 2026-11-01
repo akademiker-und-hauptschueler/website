@@ -1,0 +1,31 @@
+{
+  "type": "bars",
+  "title": "Der Einbruch kommt aus China",
+  "subtitle": "Auslieferungen Q3 2026, Veränderung gegenüber Q3 2025",
+  "unit": "%",
+  "decimals": 1,
+  "axis": [-40, 0, 10],
+  "series": [
+    { "label": "Gesamt", "color": "#0097A7" },
+    { "label": "China", "color": "#FF1744" }
+  ],
+  "rows": [
+    {
+      "label": "VW-Konzern",
+      "values": [{ "value": -14.3 }, { "value": -38.5 }],
+      "source": "Volkswagen Group, Neunmonatsergebnis 29.10.2026 (gesamt 1.885.000 nach 2.199.000) und Auslieferungen bis September (China 405.800)"
+    },
+    {
+      "label": "Mercedes-Benz Cars¹",
+      "values": [{ "value": -7.8 }, { "value": -31, "decimals": 0 }],
+      "source": "Mercedes-Benz Group, Q3 2026 (407.232 nach 441.453); China 86.800, −31 % laut Absatzmeldung Oktober 2026"
+    },
+    {
+      "label": "BMW Group",
+      "values": [{ "value": -6.3 }, { "value": -24.8 }],
+      "source": "BMW Group Absatz Q3 2026 via bmwblog (551.072 gesamt, 114.355 China)"
+    }
+  ],
+  "footnote": "¹ Mercedes-Benz: nur Pkw.",
+  "sources": "Volkswagen Group, Mercedes-Benz Group, BMW Group (Oktober 2026)."
+}

@@ -1,0 +1,36 @@
+{
+  "type": "ranges",
+  "title": "Fast alle senken die Prognose",
+  "subtitle": "Erwartete operative Umsatzrendite 2026: vorherige und aktuelle Prognose",
+  "unit": "%",
+  "decimals": 1,
+  "axis": [0, 8, 2],
+  "series": [
+    { "label": "vorher", "color": "#757575" },
+    { "label": "jetzt", "color": "#0097A7" }
+  ],
+  "rows": [
+    {
+      "label": "VW-Konzern",
+      "values": [{ "from": 4, "to": 5.5 }, { "max": 1, "decimals": 0 }],
+      "source": "Volkswagen AG, Ad-hoc-Mitteilung 18.09.2026 (zuvor 4,0–5,5 %) und Neunmonatsergebnis 29.10.2026 (bis zu 1 %)"
+    },
+    {
+      "label": "Audi-Konzern",
+      "values": [{ "from": 5, "to": 7, "decimals": 0 }, { "from": 3, "to": 5, "decimals": 0 }],
+      "source": "Audi, Halbjahresmitteilung 27.07.2026 (5–7 %) und Neunmonatsmitteilung 30.10.2026 (3–5 %)"
+    },
+    {
+      "label": "Mercedes-Benz Cars¹",
+      "values": [{ "from": 3, "to": 5, "decimals": 0 }, { "from": 2, "to": 3, "decimals": 0 }],
+      "source": "Mercedes-Benz Group, Q3 2026, 28.10.2026 (2 bis 3 %, zuvor 3 bis 5 %)"
+    },
+    {
+      "label": "Porsche-Konzern",
+      "values": [{ "from": 5.5, "to": 7.5 }, { "from": 5.5, "to": 7.5 }],
+      "source": "Porsche AG, Neunmonatsmitteilung 27.10.2026 (Prognose bestätigt)"
+    }
+  ],
+  "footnote": "¹ Mercedes-Benz: bereinigte Umsatzrendite der Pkw-Sparte. Porsche: Prognose unverändert bestätigt.",
+  "sources": "Volkswagen AG, AUDI AG, Mercedes-Benz Group, Porsche AG (Juli bis Oktober 2026)."
+}

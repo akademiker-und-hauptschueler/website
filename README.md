@@ -17,6 +17,7 @@ Die Seite ist komplett statisch: kein CMS, keine Datenbank, kein Server-Code.
 | `docs/` | Die handgeschriebene Seite (HTML, CSS, JS, Bilder) |
 | `content/posts/<slug>/` | Blog-Beiträge als Markdown (`index.md`) plus Grafiken |
 | `scripts/build.mjs` | Baut `docs/` und die Beiträge zu statischem HTML in `_site/` |
+| `scripts/charts.mjs` | Zeichnet Diagramme aus `*.chart.json` als statische SVGs |
 | `.github/workflows/deploy.yml` | Baut bei jedem Push auf `main` und veröffentlicht `_site/` auf GitHub Pages |
 
 ## 📝 Einen Blog-Beitrag schreiben
@@ -37,6 +38,10 @@ Die Seite ist komplett statisch: kein CMS, keine Datenbank, kein Server-Code.
    ```
 
 2. Grafiken (SVG/PNG) in denselben Ordner legen und relativ einbinden.
+   Diagramme mit Zahlen werden als Daten gepflegt: `<name>.chart.json` (Typ `bars` oder `ranges`,
+   pro Zeile eine `source`), eingebunden als `![Beschreibung](<name>.svg)`. Der Build erzeugt daraus
+   ein statisches SVG (`scripts/charts.mjs`, ohne JavaScript auf der Seite) und bricht ab,
+   wenn ein Wert aus dem Diagramm nicht auch im Text des Beitrags steht.
 3. Lokal ansehen (Entwürfe inklusive):
 
    ```bash
